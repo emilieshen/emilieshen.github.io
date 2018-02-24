@@ -1,0 +1,333 @@
+@font-face {
+  font-family: FuturaLight;
+  src: url(Futura-PT-Light.otf);
+}
+
+@font-face {
+  font-family: FuturaLightItal;
+  src: url(Futura-PT-Light-Oblique.otf);
+}
+
+@font-face {
+  font-family: FuturaBold;
+  src: url(Futura-PT-Bold.otf);
+}
+
+@font-face {
+  font-family: FuturaBoldItal;
+  src: url(Futura-PT-Bold-Oblique.otf);
+}
+
+@font-face {
+  font-family: FuturaBook;
+  src: url(Futura-PT-Demi.otf);
+}
+
+@font-face {
+  font-family: Nickainley;
+  src: url(Nickainley.otf);
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'FuturaLight';
+}
+
+p {
+  line-height: 1.75;
+}
+
+a {
+  color: #196859;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #dbbebd;
+}
+
+.text-primary {
+  color: #196859 !important;
+}
+
+section {
+  padding: 50px 0;
+}
+
+section h2.section-heading {
+  font-size: 35px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: 'Nickainley','Helvetica Neue', sans-serif;
+}
+
+section h3.section-subheading {
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-transform: none;
+  font-family: 'FuturaLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 50px 0;
+  }
+  section h3.section-subheading {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+
+.btn {
+  font-family: 'FuturaBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.btn-xl {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+.btn-primary {
+  background-color: #196859;
+  border-color: #196859;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #dbbebd !important;
+  border-color: #dbbebd !important;
+  color: white;
+}
+
+.btn-primary:active, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+#mainNav {
+  background-color: white;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  right: 0;
+  padding: 13px;
+  text-transform: uppercase;
+  color: white;
+  border: 0;
+  background-color: #196859;
+  font-family: 'FuturaBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#mainNav .navbar-brand {
+  color: #196859;
+  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+}
+
+#mainNav .navbar-brand img{
+  max-height: 30px;
+}
+
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #7bafa5;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  color: grey;
+  font-family: 'FuturaLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #196859;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+    padding: 1.1em 1em !important;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: white;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+    padding: 12px 0;
+  }
+}
+
+header.masthead {
+  text-align: center;
+  color: pink;
+  background-image: url("../img/leaves-01.svg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header.masthead .intro-text {
+  padding-top: 300px;
+  padding-bottom: 100px;
+}
+
+header.masthead .intro-text .intro-lead-in {
+  font-size: 20px;
+  margin-bottom: 50px;
+  font-family: 'FuturaLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: black;
+}
+
+header.masthead .intro-text .intro-heading {
+  font-size: 24px;
+  margin-bottom: 5px;
+  font-family: 'FuturaBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  header.masthead .intro-text {
+    padding-top: 400px;
+    padding-bottom: 200px;
+  }
+  header.masthead .intro-text .intro-lead-in {
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-family: 'FuturaLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: black;
+  }
+  header.masthead .intro-text .intro-heading {
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-family: 'FuturaBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: black;
+  }
+}
+
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+  font-family: 'FuturaBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#portfolio .portfolio-item {
+  right: 0;
+  margin: 0 0 15px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+  position: relative;
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px #e8e8e8;
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 3px 3px 5px #e8e8e8;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+  margin: 0;
+  text-transform: none;
+  font-family: 'FuturaBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#portfolio .portfolio-item .portfolio-caption p {
+  font-size: 16px;
+  margin: 0;
+  font-family: 'FuturaLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#portfolio * {
+  z-index: 2;
+}
+
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+}
+
+footer span.copyright {
+  font-size: 90%;
+  line-height: 40px;
+  text-transform: none;
+  font-family: 'FuturaBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+footer ul.quicklinks {
+  font-size: 90%;
+  line-height: 40px;
+  margin-bottom: 0;
+  text-transform: none;
+  font-family: 'FuturaBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 100%;
+  outline: none;
+  background-color: #196859;
+}
+
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+  background-color: #dbbebd;
+}

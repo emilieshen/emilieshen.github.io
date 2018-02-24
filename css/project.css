@@ -1,0 +1,129 @@
+@font-face {
+  font-family: FuturaLight;
+  src: url(Futura-PT-Light.otf);
+}
+
+@font-face {
+  font-family: FuturaLightItal;
+  src: url(Futura-PT-Light-Oblique.otf);
+}
+
+@font-face {
+  font-family: FuturaBold;
+  src: url(Futura-PT-Bold.otf);
+}
+
+@font-face {
+  font-family: FuturaBoldItal;
+  src: url(Futura-PT-Bold-Oblique.otf);
+}
+
+@font-face {
+  font-family: FuturaBook;
+  src: url(Futura-PT-Demi.otf);
+}
+
+@font-face {
+  font-family: Nickainley;
+  src: url(Nickainley.otf);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+hr {
+  border-color: #848484;
+  border-width: 3px;
+  max-width: 50px;
+}
+hr.light {
+  border-color: white;
+}
+a {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: black;
+}
+a:hover,
+a:focus {
+  color: #eb3812;
+}
+img.img-responsive {
+  padding-bottom: 20px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+img.project-img1 {
+  max-width: 250px;
+  padding: 5px 2px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'FuturaBook', Arial, sans-serif;
+}
+h4{
+  color: #848484;
+}
+h1{
+  padding-top: 2%;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.content {
+  background-color: white;
+}
+
+.title {
+  padding-top: 100px;
+}
+.text-faded {
+  color: #848484;
+}
+.overview {
+  padding: 10px 0;
+  background-color: #ffffff;
+}
+aside {
+  padding: 50px 0;
+}
+.no-padding {
+  padding: 0;
+}
+
+.section-heading {
+  margin-top: 0;
+  color: #848484;
+}
+.call-to-action h2 {
+  margin: 0 auto 20px;
+}
+.text-primary {
+  color: #F05F40;
+}
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+img::selection {
+  color: white;
+  background: transparent;
+}
+img::-moz-selection {
+  color: white;
+  background: transparent;
+}
+body {
+  webkit-tap-highlight-color: #222222;
+}
