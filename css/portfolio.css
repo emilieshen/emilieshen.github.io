@@ -190,7 +190,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: pink;
-  background-image: url("../img/leaves-01.png");
+  background: rgba(249,229,215,0.3);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -201,8 +201,12 @@ header.masthead {
 }
 
 header.masthead .intro-text {
-  padding-top: 300px;
+  padding-top: 30%;
   padding-bottom: 100px;
+}
+
+img.profile-pic {
+  max-width: 50%;
 }
 
 header.masthead .intro-text .intro-lead-in {
@@ -220,8 +224,14 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width: 768px) {
+  header.masthead {
+    min-height: 100%;
+  }
+  img.profile-pic {
+    max-width: 30%;
+  }
   header.masthead .intro-text {
-    padding-top: 400px;
+    padding-top: 15%;
     padding-bottom: 200px;
   }
   header.masthead .intro-text .intro-lead-in {
