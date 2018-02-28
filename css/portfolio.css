@@ -190,7 +190,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: pink;
-  background-image: url("../img/leaves-01.svg");
+  background-image: url("../img/leaves-01.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
