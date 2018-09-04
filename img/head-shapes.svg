@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="156px" height="249px" viewBox="0 0 156 249" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>head-shapes</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home/Portfolio" transform="translate(-1126.000000, -257.000000)">
+            <g id="head-shapes" transform="translate(1126.000000, 257.000000)">
+                <polygon id="Triangle" fill="#EFC955" points="84 105 156 249 12 249"></polygon>
+                <rect id="Rectangle-4" fill="#D15043" x="68" y="0" width="88" height="88"></rect>
+                <circle id="Oval" fill="#4A90E2" cx="46.5" cy="105.5" r="46.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

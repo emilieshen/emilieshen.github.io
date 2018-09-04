@@ -1,53 +1,91 @@
 @font-face {
-  font-family: FuturaLight;
-  src: url(Futura-PT-Light.otf);
+  font-family: ApercuRegular;
+  src: url(Apercu-Regular.otf);
 }
 
 @font-face {
-  font-family: FuturaLightItal;
-  src: url(Futura-PT-Light-Oblique.otf);
+  font-family: ApercuMono;
+  src: url(Apercu-Mono.otf);
 }
 
 @font-face {
-  font-family: FuturaBold;
-  src: url(Futura-PT-Bold.otf);
+  font-family: ApercuMedium;
+  src: url(Apercu-Medium.otf);
 }
 
 @font-face {
-  font-family: FuturaBoldItal;
-  src: url(Futura-PT-Bold-Oblique.otf);
+  font-family: ApercuMediumItalic;
+  src: url(Apercu-Medium-Italic.otf);
 }
 
 @font-face {
-  font-family: FuturaBook;
-  src: url(Futura-PT-Demi.otf);
+  font-family: ApercuLight;
+  src: url(Apercu-Light.otf);
 }
 
 @font-face {
-  font-family: Nickainley;
-  src: url(Nickainley.otf);
+  font-family: ApercuLightItalic;
+  src: url(Apercu-Light-Italic.otf);
+}
+
+@font-face {
+  font-family: ApercuItalic;
+  src: url(Apercu-Italic.otf);
+}
+
+@font-face {
+  font-family: ApercuBold;
+  src: url(Apercu-Bold.otf);
+}
+
+@font-face {
+  font-family: ApercuBoldItalic;
+  src: url(Apercu-Bold-Italic.otf);
 }
 
 body {
   overflow-x: hidden;
-  font-family: 'FuturaLight';
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
 p {
-  line-height: 1.75;
+  line-height: 1.5;
 }
 
 a {
-  color: #196859;
+  color: #000000;
   font-weight: 600;
 }
 
 a:hover {
-  color: #dbbebd;
+  color: #4A90E2;
+  text-decoration: none;
+}
+
+img.img-responsive {
+  padding-bottom: 20px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .text-primary {
-  color: #196859 !important;
+  color: #4A90E2 !important;
+}
+
+.title {
+  padding-top: 100px;
+  padding-bottom: 30px;
 }
 
 section {
@@ -55,10 +93,10 @@ section {
 }
 
 section h2.section-heading {
-  font-size: 35px;
-  margin-top: 0;
+  font-size: 30px;
+  margin-top: 60px;
   margin-bottom: 15px;
-  font-family: 'Nickainley','Helvetica Neue', sans-serif;
+  font-family: 'ApercuBold','Helvetica Neue', sans-serif;
 }
 
 section h3.section-subheading {
@@ -68,12 +106,18 @@ section h3.section-subheading {
   margin-left: 20px;
   margin-right: 20px;
   text-transform: none;
-  font-family: 'FuturaLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Karla', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 @media (min-width: 768px) {
   section {
     padding: 50px 0;
+  }
+  section h2.section-heading {
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
   section h3.section-subheading {
     margin-left: 70px;
@@ -82,7 +126,7 @@ section h3.section-subheading {
 }
 
 .btn {
-  font-family: 'FuturaBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Karla', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
   margin-left:auto;
   margin-right:auto;
@@ -94,13 +138,13 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-  background-color: #196859;
-  border-color: #196859;
+  background-color: #4A90E2;
+  border-color: #4A90E2;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #dbbebd !important;
-  border-color: #dbbebd !important;
+  background-color: #EFC955 !important;
+  border-color: #EFC955 !important;
   color: white;
 }
 
@@ -127,13 +171,8 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #196859;
-  font-family: 'FuturaBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-#mainNav .navbar-brand {
-  color: #196859;
-  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  background-color: #4A90E2;
+  font-family: 'ApercuBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand img{
@@ -141,19 +180,17 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #7bafa5;
+  color: #4A90E2;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 16px;
-  padding: 0.75em 0;
-  letter-spacing: 1px;
-  color: grey;
-  font-family: 'FuturaLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: black;
+  font-family: 'ApercuBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #196859;
+  color: #4A90E2;
 }
 
 @media (min-width: 992px) {
@@ -187,63 +224,38 @@ img::-moz-selection {
   }
 }
 
-header.masthead {
-  text-align: center;
-  color: pink;
-  background: rgba(249,229,215,0.3);
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.intro-text {
+  padding-top: 60%;
+  padding-bottom: 0px;
 }
 
-header.masthead .intro-text {
-  padding-top: 30%;
-  padding-bottom: 100px;
-}
-
-img.profile-pic {
-  max-width: 50%;
-}
-
-header.masthead .intro-text .intro-lead-in {
+.intro-text .intro-lead-in {
   font-size: 20px;
-  margin-bottom: 50px;
-  font-family: 'FuturaLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'ApercuBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: black;
 }
 
-header.masthead .intro-text .intro-heading {
-  font-size: 24px;
+.intro-text .intro-heading {
+  font-size: 35px;
   margin-bottom: 5px;
-  font-family: 'FuturaBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'ApercuLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: black;
 }
 
 @media (min-width: 780px) {
-  header.masthead {
-    min-height: 100%;
+  .intro-text {
+    padding-top: 30%;
+    padding-bottom: 0px;
   }
-  img.profile-pic {
-    max-width: 25%;
-  }
-  header.masthead .intro-text {
-    padding-top: 12%;
-    padding-bottom: 200px;
-  }
-  header.masthead .intro-text .intro-lead-in {
+  .intro-text .intro-lead-in {
     font-size: 24px;
-    margin-bottom: 50px;
-    font-family: 'FuturaLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'ApercuBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: black;
   }
-  header.masthead .intro-text .intro-heading {
-    font-size: 30px;
+  .intro-text .intro-heading {
+    font-size: 40px;
     margin-bottom: 5px;
-    font-family: 'FuturaBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'ApercuLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: black;
   }
 }
@@ -251,7 +263,7 @@ header.masthead .intro-text .intro-heading {
 .service-heading {
   margin: 15px 0;
   text-transform: none;
-  font-family: 'FuturaBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Karla', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #portfolio .portfolio-item {
@@ -262,31 +274,29 @@ header.masthead .intro-text .intro-heading {
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
-  max-width: 300px;
-  margin: 0 auto;
+  max-width: 600px;
+  margin: 0;
   cursor: pointer;
-  box-shadow: 3px 3px 5px #e8e8e8;
+  box-shadow: 0px 0px 9px #e8e8e8;
 }
 
 #portfolio .portfolio-item .portfolio-caption {
-  max-width: 300px;
   margin: 0 auto;
-  padding: 25px;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 3px 3px 5px #e8e8e8;
+  padding-top: 20px;
+  text-align: left;
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
   margin: 0;
   text-transform: none;
-  font-family: 'FuturaBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-family: 'ApercuBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
   font-size: 16px;
   margin: 0;
-  font-family: 'FuturaLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Karla', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #portfolio * {
@@ -308,7 +318,7 @@ footer span.copyright {
   font-size: 90%;
   line-height: 40px;
   text-transform: none;
-  font-family: 'FuturaBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'ApercuBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 footer ul.quicklinks {
@@ -316,7 +326,7 @@ footer ul.quicklinks {
   line-height: 40px;
   margin-bottom: 0;
   text-transform: none;
-  font-family: 'FuturaBook', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'ApercuBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 ul.social-buttons {
@@ -335,9 +345,9 @@ ul.social-buttons li a {
   color: white;
   border-radius: 100%;
   outline: none;
-  background-color: #196859;
+  background-color: #4A90E2;
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #dbbebd;
+  background-color: #EFC955;
 }
